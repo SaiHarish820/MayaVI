@@ -1,5 +1,6 @@
 <html>
-  {% load static %}
+
+{% load static %}
 <head>
   <title>Mayavi</title>
   <meta charset="UTF-8">
@@ -9,6 +10,7 @@
 
   <!-- CSS AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -20,9 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Syncopate:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <!--styling part -->
 <style>
@@ -34,30 +34,27 @@
   body {
     background: black;
   }
-
   h1 {
+    font-size: 3vw;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+
 </style>
-<script>
-  setTimeout(function () {
-    window.location.href = 'landingpage.html';
-  }, 5000);
-</script>
 
 <body>
   <!--Nav Bar-->
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000">
     <div class="container-fluid">
       <a class="navbar-brand" href="landingpage.html" style="font-family: 'Montserrat', sans-serif; ">
         <img src="static/assets/mayavilogo.png" alt="mayavi logo" width="70px" height="70px"
           class="d-inline-block align-text-top">
       </a>
       <center>
-        <h1 style="font-family: 'aileronsregular'; font-size: 52px;">MAYAVI</h1>
+        <h2 style="font-family: 'aileronsregular'; font-size: 52px;">MAYAVI</h2>
       </center>
       <left>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -102,7 +99,11 @@
     </div>
   </nav>
 
-  <center>
+<script>
+  setTimeout(function () {
+    window.location.href = 'landingpage.html';
+  }, 10000);
+</script>
     <h1>
       YOU HAVE SUCCESSFLLY SENT YOUR DETAILS TO MAYAVI CLUB, <BR> SOON YOU WILL GET A EMAIL FROM US.
     </h1>

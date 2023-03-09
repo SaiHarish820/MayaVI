@@ -129,32 +129,32 @@
         <div class="col align-items-start" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
           <br>
         
-      <form action="success.html" method="post" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"
+      <form action="joinus.html" method="post" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"
     style="margin-top: 20px;">
     {% csrf_token %}
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR NAME" name="first_name">
+      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR NAME" id="first_name" name="name">
       <label for="floatingInput" style="color: black; font-family: 'Syncopate', sans-serif;">FIRST NAME</label>
     </div>
     <br>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR NAME" name="last_name" />
+      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR NAME" id="last_name" name="last_name" />
       <label for="floatingInput" style="color: black; font-family: 'Syncopate', sans-serif;">LAST NAME</label>
     </div>
     <br>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR ID" name="id_number" />
+      <input type="text" class="form-control" id="floatingInput" placeholder="YOUR ID" id="id_number" name="id_number" />
       <label for="floatingInput" style="color: black; font-family: 'Syncopate', sans-serif;">ID</label>
     </div>
     <br>
     <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" />
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" id="email" name="email" />
       <label for="floatingInput" style="color: black; font-family: 'Syncopate', sans-serif;">EMAIL</label>
     </div>
     <br>
     <div class="form-floating">
       <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-        style="height: 150px" name="comment"></textarea>
+        style="height: 150px" id="comment" name="comment"></textarea>
       <label for="floatingTextarea2" style="color: black; font-family: 'Syncopate', sans-serif;">WHY YOU WANT TO
         JOIN THE CLUB ?</label>
     </div>
