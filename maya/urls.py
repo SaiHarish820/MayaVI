@@ -3,14 +3,15 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-     path("", views.landingpage, name='home'),
-     path("base", views.base),
-     path("gallery", views.gallery),
-     path("joinus",views.joinus),
-    path("projects",views.projects),
-    path("success",views.success),
-    path("index",views.index),
-    path("events",views.events),
-    path("aboutus",views.aboutus),
+     path("", views.index, name='home'),
+     path("base.html", views.base),
+     path("gallery.html", views.gallery),
+     path("joinus.html",views.joinus),
+    path("projects.html",views.projects),
+    path("success.html",views.success),
+    path("events.html",views.events),
+    path("aboutus.html",views.aboutus),
+    path("team.html",views.team),
+    path("landingpage.html",views.landingpage),
 
 ]

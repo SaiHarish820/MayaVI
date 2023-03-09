@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User,auth
+from datetime import datetime
+from .models import Contact
 # Create your views here.
 
 
@@ -13,7 +15,17 @@ def gallery(request):
      return render(request, "gallery.html")
 
 def joinus(request):
-     return render(request,"joinus.html")
+     if request.method == "POST":
+          first_name = request.POST('first_name')
+          last_name = request.POST('last_name')
+          id_number = request.POST('id_number')
+          email = request.POST('email')
+          comment = request.POST('comment')
+          joinus = Contact(first_name=first_name, last_name=last_name,
+                          id_number=id_number, email=email, comment=comment,date=datetime.today())
+          joinus.save()
+     return render(request, "joinus.html")
+
 
 def projects(request):
      return render(request,"projects.html")
