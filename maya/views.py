@@ -29,8 +29,8 @@ def joinus(request):
         joinus = Joinus(first_name=first_name, last_name=last_name, id_number=id_number, email=email, comment=comment, date=datetime.today())
         joinus.save()
         
-        subject = 'Congratulations on Joining the MayaVI Club!'
-        message = f"Dear {id_number},\n\nWe are excited to welcome you to the MayaVI Club!\n\nAs a member of the club, you'll have the opportunity to learn about Virtual Reality, Augmented Reality, and Game Development. We can't wait to see what you'll create!\n\nBest regards,\nThe MayaVI Club Team"
+        subject = 'Congratulations on Joining the Mayavi Club!'
+        message = f"Dear {id_number},\n\nWe are excited to welcome you to the Mayavi Club!\n\nAs a member of the club, you'll have the opportunity to learn about Virtual Reality, Augmented Reality, and Game Development. We can't wait to see what you'll create!\n\nBest regards,\nTeam Mayavi Club"
         send_mail(subject, message, 'mayaviclubklu@gmail.com', [email], fail_silently=False)
 
         return render(request, "success.html")
