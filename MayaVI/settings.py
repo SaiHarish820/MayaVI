@@ -46,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'MayaVI.wsgi.application'
 
 DATABASES = {
   'default': {
-'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'SaiHarish820',
+    'PASSWORD': 'nJuo6hcDeY5F',
+    'HOST': 'ep-black-rice-525474.us-east-2.aws.neon.tech',
+    'PORT': '5432',
   }
 }
 
