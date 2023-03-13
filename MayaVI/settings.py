@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'MayaVI.wsgi.application'
 
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
-    'USER': 'SaiHarish820',
-    'PASSWORD': 'nJuo6hcDeY5F',
-    'HOST': 'ep-black-rice-525474.us-east-2.aws.neon.tech',
-    'PORT': '5432',
+'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
   }
 }
 
