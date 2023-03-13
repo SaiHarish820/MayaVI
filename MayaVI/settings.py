@@ -76,11 +76,17 @@ WSGI_APPLICATION = 'MayaVI.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'SaiHarish820',
+    'PASSWORD': 'nJuo6hcDeY5F',
+    'HOST': 'ep-black-rice-525474.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
 
 
